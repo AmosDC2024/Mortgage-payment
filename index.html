@@ -13,14 +13,48 @@
              <h1>Mortgage Calculator</h1> 
              <button class="clear-all">Clear All</button>
          </div>  
-         <h2>Mortgage Amount</h2>
-         <form> 
-          
-         </form>
- 
-     </div>
-     <div>fjdfbn</div>
+         <form>
+            <label for="mortgage" class="mortgage">Mortgage Calculator</label>
+            <div class="input-group">
+               <span class="symbol">£</span> 
+               <input type="number" id="mortgage" class="mortgage-input" required>
+            </div>   
+            <div class="mortgage-interest">  
+               <div>
+                  <label for="mortgage-term" class="mortgage">Mortgage Term</label> 
+                  <div class="mortgage-control"> 
+                        <input type="number" id="mortgage-term" class="" required> 
+                        <span  class="years">years</span> 
+                   </div>   
+               </div> 
+               <div>
+                  <label for="mortgage-percent" class="mortgage">Mortgage Percent</label> 
+                   <div class="mortgage-control"> 
+                        <input type="number" id="mortgage-percent" class="" required> 
+                        <span  class="percent">%</span> 
+                   </div>   
+               </div> 
+            </div> 
+
+            <label for="mortgage-type" class="mortgage">Mortgage Type</label> 
+            <div class="mortgage-type">
+               <input type="radio" id="mortgage-type" required> 
+               <span>Repayment</span>
+            </div>
+            <div class="interest-only">
+               <input type="radio" id="mortgage-type" required> 
+               <span>Interest Only</span>
+            </div> 
+            <button class="cta-calculate"><img src="/assets/images/icon-calculator.svg" alt="calculator">Calculate Repayment</button>
+         </form> 
+    </div> 
+    <section class="result-display"> 
+      <img src="/assets/images/illustration-empty.svg" alt=""> 
+      <h2>Results shown here</h2> 
+      <p>Complete the form and click "calcualte repayment" to see what your monthly repayment would be.</p>
+    </section> 
   </main>
   
 </body>
 </html>
+ 
