@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mortgage Repayment</title> 
-  <link rel="stylesheet" href="/css/style.css"> 
+  <title>mortgage Result</title> 
+  <link rel="stylesheet" href="/css/result.css"> 
 </head>
 <body> 
   <main class="main">
@@ -14,7 +14,7 @@
              <button class="clear-all">Clear All</button>
          </div>  
          <form>
-            <label for="mortgage" class="mortgage">Mortgage Calculator</label>
+            <label for="mortgage" class="mortgage">Mortgage Amount</label>
             <div class="input-group">
                <span class="symbol">£</span> 
                <input type="number" id="mortgage" class="mortgage-input" required>
@@ -48,10 +48,22 @@
             <button class="cta-calculate"><img src="/assets/images/icon-calculator.svg" alt="calculator">Calculate Repayment</button>
          </form> 
     </div> 
-    <section class="result-display"> 
-      <img src="/assets/images/illustration-empty.svg" alt=""> 
-      <h2>Results shown here</h2> 
-      <p>Complete the form and click "calcualte repayment" to see what your monthly repayment would be.</p>
+    <section class="result-display">  
+       <h2>Your results</h2>  
+        <p>Your results are shwon below based on the information you provided. To adjust the result, edit the form and click "calculate repaymet" again</p> 
+        <div class="display"> 
+          <div class="monthly-repayment"> 
+            <p>Your monthly repayment</p> 
+            <div class="repayment">£ <span class="amount">1,797.74</span></div> 
+          </div>
+          <div class="total-repayment">
+             <p>Total your repayment over the term</p> 
+             <div>£<span>539,322.23</span></div>
+          </div>
+
+        </div>
+     
+     
     </section> 
   </main>
   

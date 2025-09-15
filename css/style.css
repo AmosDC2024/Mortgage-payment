@@ -19,7 +19,7 @@ body{
 .main{ 
   background-color:  hsl(0, 0%, 100%); 
   width: 100%;
-  max-width: 1000px;  
+  max-width: 800px;  
   min-height:500px ;
   margin: 0 auto; 
   border-radius: 20px; 
@@ -39,7 +39,7 @@ body{
 } 
 
 .mortgage-wrapper h1{ 
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
   font-weight: 500;
 } 
 
@@ -50,13 +50,14 @@ body{
   border-bottom: 1px solid; 
   background-color: transparent; 
   font-weight:500 ; 
-  outline: none;
+  outline: none;  
+  cursor: pointer;
 } 
  
 
 .mortgage-form{   
   width: 100%;
-  max-width: 500px;   
+  max-width: 400px;   
   padding: 2rem 2rem;
 }
 .mortgage{ 
@@ -73,8 +74,14 @@ body{
   height: 2.2rem;           /* the height you want */
   border: 1px solid #ccc;   /* optional: if you want a border around the group */
   border-radius: 4px;   
-  margin-top: 1rem;     /* optional */
-}
+  margin-top: 1rem;     /* optional */ 
+} 
+
+.input-group:hover, .input-group:hover .symbol{  
+  border: 1px solid hsl(61, 71%, 84%);   
+  background-color: hsl(61, 71%, 84%);
+} 
+
 
 .symbol {
   width: 2rem;
@@ -93,7 +100,8 @@ body{
   padding-left: 0.5rem;     /* small spacing from the symbol */
   font-size: 1rem;
   box-sizing: border-box;
-  outline: none; 
+  outline: none;  
+  cursor: pointer;
 }
 
 .cta-repayment{ 
@@ -126,7 +134,7 @@ body{
  align-items: center; 
  border: 1px solid #ccc;
  height: 2.2rem; 
- gap: 1rem;
+ /* gap: 1rem; */
  margin-top: 1rem;
 }  
 
@@ -148,9 +156,10 @@ body{
   border: none; 
   height: 100%; 
   /* padding-right: 2rem;  */
-  width: 50%; 
+  width: 60%; 
   flex: 1;  
-  outline: none;
+  outline: none; 
+  cursor: pointer;
 } 
 
 .mortgage-type, .interest-only{ 
@@ -159,7 +168,30 @@ body{
   margin-top: 1rem; 
   color: hsl(202, 55%, 16%); 
   font-weight: 700; 
-  font-size: 0.9rem;
+  font-size: 0.9rem; 
+  cursor: pointer;
+}
+
+.mortgage-control:hover,.interest-only{ 
+    border-color: hsl(61, 71%, 84%);
+}
+ .mortgage-control:hover .percent{ 
+    background-color: hsl(61, 71%, 84%);
+} 
+ .mortgage-control:hover .years{ 
+    background-color: hsl(61, 71%, 84%);
+} 
+
+.mortgage-type:hover input[type="radio"],
+.mortgage-type:hover{ 
+   accent-color: hsl(61, 71%, 84%);
+  background-color: hsl(61, 71%, 84%);
+}
+
+.interest-only:hover input[type="radio"],
+.interest-only:hover {
+  accent-color: hsl(61, 71%, 84%);
+  background-color: hsl(61, 71%, 84%);
 }
 
 .cta-calculate{  
@@ -171,13 +203,14 @@ body{
   margin-top: 1.5rem; 
   background-color: hsl(61, 70%, 52%); 
   border: none; 
-  width: 20rem;
+  width: 20rem; 
+  cursor: pointer;
 } 
 
 .result-display{ 
   background-color:  hsl(202, 55%, 16%); 
   width: 100%;
-  max-width: 500px;   
+  max-width: 400px;   
   border-radius: 20px;
   border-bottom-left-radius: 60px;  
   display: flex;  
@@ -194,7 +227,8 @@ body{
 }
 .result-display p{ 
   width: 100%; 
-  max-width: 380px; 
+  max-width: 330px; 
   margin-top: 0.5rem; 
   color:  hsl(200, 26%, 54%);
-}
+} 
+
